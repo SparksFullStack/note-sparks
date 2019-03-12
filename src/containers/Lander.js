@@ -1,5 +1,11 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
+import {
+    Jumbotron,
+    Container
+} from 'reactstrap';
+import "./Lander.css";
+
 
 class Lander extends Component {
     renderNotes = () => {
@@ -14,7 +20,12 @@ class Lander extends Component {
     render() {
         return (
         <div>
-            {this.renderNotes()}
+            {/* {this.renderNotes()} */}
+            <Jumbotron className="jumbotron-main" fluid> 
+                <Container fluid>
+                    <h1>Notes go here</h1>
+                </Container>               
+            </Jumbotron>
         </div>
         )
     }
