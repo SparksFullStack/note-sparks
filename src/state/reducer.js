@@ -1,5 +1,5 @@
 const initialState = {
-    notes: [],
+    notes: [{ title: 'test', content: 'i like turtles'}],
 }
 
 const reducer = (state = initialState, action) => {
