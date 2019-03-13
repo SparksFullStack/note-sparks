@@ -6,13 +6,14 @@ import {
 } from 'reactstrap';
 import "./Lander.css";
 
+import NoteCard from '../components/NoteCard';
+
 
 class Lander extends Component {
     renderNotes = () => {
         return this.props.notes.map((note) => (
             <div key={note.content} className="note">
-                <h1>{note.title}</h1>
-                <p>{note.content}</p>
+                <NoteCard />
             </div>
         ));
     }
@@ -23,8 +24,13 @@ class Lander extends Component {
             {/* {this.renderNotes()} */}
             <Jumbotron className="jumbotron-main" fluid> 
                 <Container fluid>
-                    <h2 className="lander--header">notes</h2>
-                    <hr className="lander--hr" />
+                    <div className="jumbotron--header">
+                        <h2 className="lander--header">notes</h2>
+                    </div>
+                    
+                    <div className="jumbotron--note-container">
+                        {this.renderNotes()}
+                    </div>
                 </Container>               
             </Jumbotron>
         </div>

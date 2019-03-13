@@ -6,3 +6,6 @@
     margin-bottom: 0 !important;
 }
 
+.jumbotron--header {
+    border-bottom: 1px solid darkblue;
+}
