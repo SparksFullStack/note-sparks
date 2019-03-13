@@ -23,7 +23,8 @@ class Lander extends Component {
             {/* {this.renderNotes()} */}
             <Jumbotron className="jumbotron-main" fluid> 
                 <Container fluid>
-                    <h1>Notes go here</h1>
+                    <h2 className="lander--header">notes</h2>
+                    <hr className="lander--hr" />
                 </Container>               
             </Jumbotron>
         </div>
