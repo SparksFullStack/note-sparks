@@ -13,7 +13,7 @@ class Lander extends Component {
     renderNotes = () => {
         return this.props.notes.map((note) => (
             <div key={note.content} className="note col-md-4 col-sm-6 col-lg-3">
-                <NoteCard />
+                <NoteCard note={note}/>
             </div>
         ));
     }

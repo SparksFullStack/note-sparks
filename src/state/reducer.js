@@ -5,7 +5,7 @@ const initialState = {
         { title: 'test', content: 'i like sloths'}
     ],
     user: {
-        isSignedIn: true,
+        isSignedIn: false,
     }
 }
 

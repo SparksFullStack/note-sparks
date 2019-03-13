@@ -4,20 +4,20 @@ import {
     CardText, 
     CardBody,
     CardTitle, 
-    CardSubtitle, 
     Button 
 } from 'reactstrap';
 
 import "./NoteCard.css";
 
 const NoteCard = props => {
+    const { note } = props;
     return (
         <Card className="notecard">
             <CardBody>
-                <CardTitle>Card title</CardTitle>
-                <CardSubtitle>Card subtitle</CardSubtitle>
-                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                <Button>Button</Button>
+                <CardTitle>{note.title}</CardTitle>
+                <CardText>{note.content}</CardText>
+                <Button className="note--button" color="primary"><a href="#" style={{ textDecoration: 'none', color: "#fff" }} href="#">View</a></Button>
+                <Button className="note--button"><a href="#" style={{ textDecoration: 'none', color: "#fff" }} href="#">Edit</a></Button>
             </CardBody>
         </Card>
     )

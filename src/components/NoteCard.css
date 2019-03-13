@@ -1,3 +1,8 @@
 .notecard {
     margin-top: 15px;
 }
+
+.note--button {
+    width: 80px;
+    margin-left: 10px;
+}
