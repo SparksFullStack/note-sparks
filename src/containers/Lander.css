@@ -9,3 +9,7 @@
 .jumbotron--header {
     border-bottom: 1px solid darkblue;
 }
+
+.jumbotron--note-container {
+    margin-top: 20px;
+}
